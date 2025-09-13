@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  vm: 
+    build: .
+    container_name: w1_remote_vnc
+    ports: 
+      - "2222:22"
+      - "5901:5901"
+    tty: true
+    restart: unless-stopped
