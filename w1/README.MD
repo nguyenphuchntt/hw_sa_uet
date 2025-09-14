@@ -11,14 +11,14 @@ Sử dụng câu lệnh sau để tạo một terminal instance trong container 
 ```docker exec -it w1_remote_vnc /bin/bash```
 ### Tải DE xfce4 và vncserver
 ```sudo apt-get install -y nano xfce4 xfce4-goodies tightvncserver dbus-x11```
+### Khởi chạy vncserver lần đầu và setup mật khẩu 
+```vncserver```
 ### config file cấu hình `~/.vnc/xstartup` cho xfce4
 ```
 #!/bin/bash
 xrdb $HOME/.Xresources
 startxfce4 &
 ```
-### Khởi chạy vncserver lần đầu và setup mật khẩu 
-```vncserver```
 ## Tại máy client 
 install vncviewer -> vncviewer localhost:5901
 
