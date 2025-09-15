@@ -1,0 +1,10 @@
+Why docker, docker-compose ?
+docker giúp gói gọn phần mềm vào trong một không gian riêng biệt gọi là container chứa đầy đủ code, packages, dependencies, ... để chạy phần mềm -> dễ phân phối, cài đặt, sửa đổi.v.v
+với các phần mềm phức tạp -> 1 container không nên đảm nhận mọi thứ -> chia nhiệm vụ cho nhiều container khác nhau -> config và cài đặt, kết hợp qua docker-compose 
+docker tận dụng kernel của hệ điều hành → nhanh, hiệu năng
+Linux, Unix, BSD, *nix ? macOS ?
+Unix là hệ điều hành đầu tiên đa nhiệm, multi-user (có phí)
+Linux kernel → phát triển dựa trên ý tưởng unix 
+BSD cũng phát triển từ unix; có pre-BSD → có thể không yêu cầu public mã nguồn → macOS phát triển thêm 
+=> gọi chung là *nix
+VNC → virtual network computing -> dùng để remote và hiển thị màn hình 
